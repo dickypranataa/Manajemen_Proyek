@@ -41,6 +41,13 @@
             <p class="text-3xl md:text-4xl mt-2 font-bold">{{ $totalUser }}</p>
             <a href="{{ route('users.index') }}" class="text-sm hover:underline mt-2 inline-block">Lihat User</a>
         </div>
+
+        <!-- Total Notifikasi -->
+        <div class="bg-yellow-400 text-white rounded-lg shadow-md p-6 text-center">
+            <h2 class="text-lg md:text-xl font-semibold">Total Notifikasi</h2>
+            <p class="text-3xl md:text-4xl mt-2 font-bold">{{ $totalNotifications }}</p>
+            <a href="{{ route('users.index') }}" class="text-sm hover:underline mt-2 inline-block">Lihat User</a>
+        </div>
     </div>
 
     <!-- Link ke Laporan -->
@@ -48,10 +55,6 @@
         <a href="{{ route('laporan.index') }}" class="text-lg text-blue-500 hover:underline">Lihat Laporan</a>
     </div>
 
-    <!-- Link ke Notifikasi -->
-    <div class="mt-10 text-center">
-        <a href="{{ route('notifikasi.index') }}" class="text-lg text-yellow-500 hover:underline">Notifikasi Barang Kadaluarsa</a>
-    </div>
 </div>
 
 <!-- Diagram Transaksi Bulanan -->
